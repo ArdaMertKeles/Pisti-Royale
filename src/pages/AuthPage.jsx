@@ -120,7 +120,6 @@ export const AuthPage = () => {
                         </div>
                     </div>
                     <button className='signUpBtn' onClick={() => { setSignUpPage(true); setPassword(''); setEmail(''); setInvalidAcc(false) }}>Sign Up</button>
-                    <button className='forgetPasswordBtn'>Forget Password</button>
                     <button type="button" className="login-with-google-btn" onClick={signWithGoogle} >Sign in with Google</button>
                 </div>
             </form>}

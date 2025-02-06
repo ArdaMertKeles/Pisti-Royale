@@ -1416,6 +1416,49 @@ $blankRed : rgb(254, 21, 21);
         font-family: 'VT323', monospace;
     }
 }
+.marketContainer{
+    position: absolute;
+    z-index: 3;
+    background: lightgray;
+    width: 95%;
+    height: 90%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    border-radius: 1em;
+    .closeBtn {
+        position: absolute;
+        right: -20px;
+        top: -20px;
+        font-size: 3.5em;
+        border-radius: 100%;
+        color: black;
+        background: red;
+        transition: 0.2s ease;
+        cursor: pointer;
+
+        &:hover {
+            background: rgb(182, 1, 1);
+            transition: 0.2s ease;
+        }
+    }
+
+    h3 {
+        align-self: center;
+        font-size: 3em;
+        font-family: 'VT323', monospace;
+    }
+    p {
+        display: flex;
+        flex-direction: column;
+        padding: 3em;
+        align-self: center;
+        font-size: 3em;
+        font-family: 'VT323', monospace;
+    }
+}
 
 .settingsContainer {
     position: absolute;

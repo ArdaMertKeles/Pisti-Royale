@@ -12,6 +12,7 @@ import { DeckAdjuster } from "../components/mainPage/DeckAdjuster";
 import { Ranking } from "../components/mainPage/Ranking";
 import { HowToPlay } from "../components/mainPage/HowToPlay";
 import { Settings } from "../components/mainPage/Settings";
+import { Market } from "../components/mainPage/Market";
 
 export const MainLobby = () => {
     const navigate = useNavigate();
@@ -21,6 +22,7 @@ export const MainLobby = () => {
     const [ranking, setRanking] = useState(false)
     const [howToPlay, setHowToPlay] = useState(false)
     const [settings, setSettings] = useState(false)
+    const [market, setMarket] = useState(false)
     const [waitingForMatch, setWaitingForMatch] = useState(false);
 
     const user = auth.currentUser
@@ -251,7 +253,7 @@ export const MainLobby = () => {
                 </div>
                 <div className="buttons">
                     <button className="deckBtn" onClick={() => setDeckAdjuster(true)}><ViewCarouselIcon /></button>
-                    <button className="shopBtn"><StorefrontIcon /></button>
+                    <button className="shopBtn" onClick={() => setMarket(true)}><StorefrontIcon /></button>
                     <button className="settingsBtn" onClick={() => setSettings(true)}><SettingsIcon /></button>
                 </div>
             </div>
@@ -274,6 +276,7 @@ export const MainLobby = () => {
             {ranking && <Ranking setRanking={setRanking} />}
             {howToPlay && <HowToPlay setHowToPlay={setHowToPlay} />}
             {settings && <Settings setSettings={setSettings} />}
+            {market && <Market setMarket={setMarket} />}
         </div>
     );
 };

@@ -80,6 +80,7 @@ export const DeckAdjuster = ({ setDeckAdjuster }) => {
                 deck: deck,
                 element: element
             });
+            setDeckAdjuster(false)
         } else {
             if (!error) {
                 setError(true)
