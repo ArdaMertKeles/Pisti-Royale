@@ -1,6 +1,16 @@
-# Getting Started with Create React App
+# Online Fantasy Card App Made with React.JS and Firebase [Live Server](https://pisti-royale.netlify.app/)
+I used React.JS Firebase and SASS on this project. There is Auth system.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+![Ekran görüntüsü 2025-02-06 153743](https://github.com/user-attachments/assets/8ad9fbeb-3f69-4e7b-9682-8c52d9afbb6e)
+
+In this fantasy card game, each player starts by selecting a deck of 9 cards. Every card has its own mana cost, attack damage, HP, and element.
+
+![Ekran görüntüsü 2025-02-06 152910](https://github.com/user-attachments/assets/23b2f428-3a98-4258-bd4b-39ee7ca784d8)
+![Ekran görüntüsü 2025-02-06 152837](https://github.com/user-attachments/assets/64c42920-4b89-4d48-8020-8c4a6bc3e721)
+
+Players start with 2 mana per turn. Every 4 turns, the base mana gain increases by +1. At the beginning of each turn, players draw 1 random card from their deck. Players can play cards if they have enough mana.
+
+![Ekran görüntüsü 2025-02-06 152801](https://github.com/user-attachments/assets/75987d04-2c4a-4344-912b-ae23cbd8a5aa)
 
 ## Available Scripts
 
